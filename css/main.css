@@ -1,0 +1,520 @@
+*{
+    box-sizing: border-box;
+}
+
+html,body{
+    width:100%;
+    margin:0px;
+    font-family: 'Lato', sans-serif;
+    min-height:100%;
+}
+
+html{
+    height:100%;
+}
+
+body{
+    min-height: 100%;
+    position:relative;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+footer{
+    background-color: rgba(0,0,0,0.6);
+    color:#d8d8d8;
+    font-size:10px;
+    display:flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width:100%;
+    position:absolute;
+    bottom:0px;
+    left:0px;
+}
+footer .left-content, footer .right-content{
+    width:40%;
+    min-width: 400px;
+}
+
+footer p{
+    width:100%;
+}
+
+
+footer .right-content{
+    position:relative;
+}
+
+
+
+.main-contianer{
+    width:100%;
+    height:100%;
+    background-image: url("../images/bg_main.jpg");
+    background-size: cover;
+    background-position: center center;
+}
+
+.social-icons{
+    position:absolute;
+    right:0px;
+    bottom:0px;
+}
+
+
+.social-icons ul li{
+    display:inline-block;
+    padding-top: 6px;
+    padding-left: 8px;
+    background-color: #d8d8d8;
+    color:rgba(0,0,0,0.6);
+    width:25px;
+    height:25px;
+    border-radius: 100%;
+}
+
+.social-icons ul li:nth-child(odd){
+    padding-left: 8px;
+}
+
+.main-form-container{
+    width:100%;
+    text-align: right;
+    padding: 50px;
+    padding-bottom: 150px;
+}
+
+.main-form-container.success{
+    text-align: center;
+}
+
+.form-main-content{
+    background-color: rgba(0,0,0,0.6);
+    padding:20px 80px;
+}
+
+.main-card{
+    width:410px;
+    display:inline-block;
+    border-radius: 7px;
+    margin-bottom: 20px;
+}
+    .form-header{
+        background-color: #f6f6f6;
+        position:relative;
+        text-align: center;
+        padding-top:26px;
+        padding-bottom:1px;
+        padding-left:5%;
+        padding-right:5%;
+        border-top-right-radius: 7px;
+        border-top-left-radius: 7px;
+    }
+
+    .form-header p{
+        position:absolute;
+        top:-3px;
+        right:5px;
+        font-size: 7px;
+        color:#7c7c7c;
+    }
+
+    .form-header img{
+        display:inline-block;
+        max-width:40%;
+        vertical-align: top;
+        max-height: 44px;
+        margin-right: 20px;
+    }
+
+    .form-header img:nth-child(3){
+        margin-right: 0px;
+        width:80px;
+    }
+
+    .nav-circles ul{
+        margin-bottom:8px;
+        margin-top:20px;
+    }
+
+    .nav-circles ul li{
+        display:inline-block;
+        width:10px;
+        height:10px;
+        background-color:#f6f6f6;
+        border-radius:100%;
+        border:2px solid #03356d;
+        margin:2px;
+        cursor: pointer;
+    }
+
+    .nav-circles ul li.active{
+        background-color: #03356d;
+    }
+
+    .content-container{
+        text-align: center;
+    }
+
+    .content-container .button-group{
+        display:inline-block;
+        width:100%;
+        margin-bottom:10px;
+    }
+
+    button{
+        border: 1px solid #ffffff;
+        color: #ffffff;
+        padding:10px;
+        border-radius: 3px;
+        font-size:10px;
+        background-color: transparent;
+        cursor:pointer;
+    }
+
+    .button-group.btn-and-input{
+        display:flex;
+        flex-wrap: nowrap;
+    }
+
+    input{
+        padding:10px;
+        background-color: #ffffff;
+        border: 2px solid #ffffff;
+        border-radius: 3px;
+        font-size:11px;
+    }
+
+    .btn-and-input input{
+        width:66%;
+    }
+
+    /*.btn-and-input input::-webkit-input-placeholder { 
+        color:    #004899;
+    }
+    .btn-and-input input:-moz-placeholder { 
+       color:    #004899;
+       opacity:  1;
+    }
+    .btn-and-input input::-moz-placeholder { 
+       color:    #004899;
+       opacity:  1;
+    }
+    .btn-and-input input:-ms-input-placeholder {
+       color:    #004899;
+    }*/
+
+    .btn-and-input button{
+        width:32.23%;
+        margin-right: 5px;
+    }
+
+    .button-group.fifty button{
+        display:inline-block;
+        width:50%;
+
+    }
+
+    .button-group.fifty button:nth-child(1){
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 0px;
+        border-right:1px solid #ffffff;
+    }
+    .button-group.fifty button:nth-child(2){
+        border-top-left-radius: 0px;
+        border-bottom-left-radius: 0px;
+        border-left:1px solid #ffffff;
+    }
+
+    .button-group.thirty button{
+        width: 33%;
+        margin-right: 5px;
+    }
+
+    .button-group.thirty button:nth-child(3){
+        margin-right: 0px;
+    }
+
+    .button-group.thirty{
+        display:flex;
+        flex-wrap: nowrap;
+    }
+
+    .button-group button.active{
+        background-color: #03356d;
+    }
+
+    .button-group.social-connect{
+        text-align: left;
+    }
+
+    .button-group.social-connect button{
+        background-color: #2b4170; /* fallback color */
+        background: -moz-linear-gradient(top, #3b5998, #2b4170);
+        background: -ms-linear-gradient(top, #3b5998, #2b4170);
+        background: -webkit-linear-gradient(top, #3b5998, #2b4170);
+        border: 1px solid #2b4170;
+        text-shadow: 0 -1px -1px #1f2f52;
+        border-radius: 6px;
+    }
+
+    .button-group.social-connect button i{
+        font-weight: 700;
+        font-size:14px;
+        padding-right: 10px;
+        margin-right: 10px;
+        border-right: 1px solid rgba(0,0,0,0.2)
+    }
+
+
+.form .input-fields{
+    margin-bottom: 10px;
+}
+
+.form .input-fields, .form .input-fields button, .form .input-fields input{
+    width:100%;
+}
+
+.form .input-fields button{
+    text-align: left;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    color:#004899;
+    background-color: #ffffff;
+    padding-bottom:0px;
+    padding-top:6px;
+    font-size: 9px;
+    font-weight: 700;
+    border-width:2px;
+}
+
+.form .input-fields input{
+    text-align: left;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    font-size:13px;
+    color: #808080;
+    font-weight: 700;
+    padding-top: 2px;
+    padding-bottom: 5px;
+}
+
+.form .input-fields .select-box{
+    border-radius: 3px;
+    text-align: left;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    font-size:13px;
+    color: #808080;
+    font-weight: 700;
+    padding-top: 2px;
+    padding-bottom: 5px;
+    background-color: #ffffff;
+
+}
+
+.form .input-fields select{
+    padding: 5px 10px;
+    font-size:13px;
+    color: #808080;
+    font-weight: 700;
+    width: 110%;
+    border: none;
+    box-shadow: none;
+    background-color: transparent;
+    background-image: none;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    padding-top: 2px;
+    padding-bottom: 5px;
+}
+
+.button-group.lightBlue .active{
+    background-color: #004899;
+}
+
+.submit-button-group{
+    text-align: right;
+}
+.submit-button{
+    display: flex;
+    flex-wrap: nowrap;
+    float:right;
+    padding:0px;
+    border:none;
+}
+
+.submit-button div{
+    display:inline-block;
+    padding:10px;
+}
+
+.submit-button div:nth-child(1){
+    padding-left: 13px;
+    padding-right: 13px;
+    background-color: #808080;
+    border-top-left-radius:5px;
+    border-bottom-left-radius:5px;
+}
+
+.submit-button div:nth-child(2){
+    background-color: #03458f;
+    border-top-right-radius:5px;
+    border-bottom-right-radius:5px;
+}
+
+.submit-button.opposite{
+    float:left;
+}
+
+.submit-button.opposite div:nth-child(1){
+    background-color: #03458f;
+    border-top-right-radius:0px;
+    border-bottom-right-radius:0px;
+}
+
+.submit-button.opposite div:nth-child(2){
+    padding-left: 13px;
+    padding-right: 13px;
+    background-color: #808080;
+    border-top-left-radius:0px;
+    border-bottom-left-radius:0px;
+}
+
+.clearfix{
+    clear:both;
+}
+
+.select-box{
+    position:relative;
+}
+
+.select-box i{
+    position: absolute;
+    right:10px;
+    top:5px;
+}
+
+.input-fields.text{
+    text-align: left;
+    color:#ffffff;
+    font-size:11px;
+}
+
+.input-fields.text h4, .input-fields.text p{
+    margin:0px;
+}
+
+.button-group.left-aligned{
+    display:flex;
+    align-items: flex-start;
+}
+
+.button-group.left-aligned button{
+    width:80px;
+    margin-right: 5px;
+}
+
+.lightBlue button.active{
+    background-color: #004899;
+}
+
+.input-fields.group-three{
+    display:flex;
+    flex-wrap: nowrap;
+    margin-bottom: 0px;
+}
+
+.input-fields .input-group-three{
+    display:inline-block;
+    margin-right: 5px;
+}
+
+.cvv{
+    padding-top: 13px !important;
+    padding-bottom: 8px !important;
+}
+
+.cvv-container{
+    width:27% !important;
+    margin-right: 0px !important;
+}
+
+.inline-block{
+    display:inline-block;
+    vertical-align: middle;
+}
+
+.toggle-button{
+    display:inline-block;
+    vertical-align: middle;
+    margin-left: 5px;
+    width:34px;
+    background-color:#004899;
+    font-size: 10px;
+    overflow-x: hidden;
+    white-space: nowrap;
+    border-radius: 10px;
+    padding-left: 5px;
+    text-align: left;
+}
+
+
+.toggle-button .cirlce{
+    width:13px;
+    margin-bottom: 1px;
+    margin-top: 1px;
+    height:13px;
+    background-color: #ffffff;
+    border-radius: 100%;
+}
+
+.toggle-inside-contents{
+    cursor:pointer;
+    -webkit-transition: margin-left 0.6s; /* Safari */
+    transition: margin-left 0.6s;
+}
+
+
+.toggle-button.active  .toggle-inside-contents{
+    margin-left: -18px;
+}
+
+
+
+.main-form-container.success .main-card{
+    text-align: center;
+}
+
+.main-form-container.success .content-container .input-fields{
+    text-align: center;
+}
+
+
+.fb-button {
+        background-color: #2b4170; /* fallback color */
+        background: -moz-linear-gradient(top, #3b5998, #2b4170);
+        background: -ms-linear-gradient(top, #3b5998, #2b4170);
+        background: -webkit-linear-gradient(top, #3b5998, #2b4170);
+        border: 1px solid #2b4170;
+        text-shadow: 0 -1px -1px #1f2f52;
+        border-radius: 6px;
+    }
+
+.fifty-percent{
+    width:50%;
+    margin-right: 5px;
+}
+
+.success-submit-button button{
+    border:none ;
+    width:150px ;
+    background-color: #03458f;
+}
